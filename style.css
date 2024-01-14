@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+    }
+
+
+.container {
+    width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    position: relative;
+}
+
+.nav {
+    background: #4E4E4E;
+    height: 50px;
+}
+
+.firma {
+    justify-content: flex-start;
+    float: left;
+    margin: 15px 20px;
+}
+
+.menu {
+    display: none;
+}
+
+
+.main {
+    flex-direction: column;
+    background-image: url(https://picsum.photos/1080/720);
+    position: relative;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.shadow {
+    position: absolute;
+    background-color: black;
+    opacity: 0.2;
+    height: 100vh;
+}
+
+.content {
+    position: absolute;
+    padding-left: 10px;
+}
+
+.content > h1 {
+    font-size: 46px;
+}
+
+.content > p {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.button {
+    margin-top: 15px;
+    width: 50px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid grey;
+}
+
+.link2 {
+    color: white;
+}
+
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+#our {
+    background-color: white;
+    color: black;
+
+} 
+
+.associates {
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.associates > b {
+    font-weight: 700;
+}
+
+.photo {
+    width: 15%;
+}
+
+.circle1 {
+    width: 100%;
+    border-radius: 50%;
+    padding-top: 100%;
+    background-image: url(https://worksmile.com/wp-content/uploads/2022/06/pracownik_duzy_potencjal-768x499.png);
+    background-size: cover;
+
+}
+
+.circle2 {
+    width: 100%;
+    border-radius: 50%;
+    padding-top: 100%;
+    background-image: url(https://www.prawo.pl/gfx/prawopl/_thumbs/pl/wkdokumenty/000/188/783/1/prace-budowlane-000081-thinkstockphotos,nICD62SaolTLo7bXW5mZ.jpg);
+    background-size: cover;
+
+}
+
+.associates:nth-child(odd) {
+    justify-content: flex-end;
+}
+
+
+.associates:nth-child(even) {
+    justify-content: flex-start;
+}
+
+#offer {
+    background-color: rgba(18, 131, 243, 0.618);
+}
+
+.offer_boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 740px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .container {
+        width: 960px;
+    }
+
+    .menu {
+        justify-content: flex-end;
+        display: contents;
+    }
+    
+    .menu > ul {
+        list-style-type: none;   
+    }
+    
+    .new_section {
+        float: right;
+        text-align: right;
+        margin: 15px 20px;
+    }
+    
+    .link {
+        color: black;
+    }
+    
+    .new_section:hover {
+        cursor: not-allowed;
+    }
+
+    .link2:hover {
+        color: black;
+    }
+
+    .button:hover {
+        color: black;
+        cursor: pointer;
+        background-color: white;
+    } 
+
+    .offer {
+        width: 992px;
+    }
+
+    .box:hover {
+    transform: scale(1.05);
+    transition-duration: 1s;
+    cursor: pointer;
+    }
+}
